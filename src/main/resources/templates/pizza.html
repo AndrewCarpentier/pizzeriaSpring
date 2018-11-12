@@ -11,17 +11,6 @@
         border-collapse: collapse;
     }
 </style>
-Page de pizza
-
-
-    <table>
-        <tr th:each="pizza:${pizzas}">
-            <td th:text="${pizza.libelle}"></td>
-            <td th:text="${pizza.reference}"></td>
-            <td th:text="${pizza.prix}"></td>
-            <td th:text="${pizza.urlImage}"></td>
-        </tr>
-    </table>
-
+<span th:text="${pizza.libelle}"></span>
 </body>
 </html>

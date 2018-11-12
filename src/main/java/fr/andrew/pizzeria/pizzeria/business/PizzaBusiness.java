@@ -15,4 +15,8 @@ public class PizzaBusiness {
     public List<Pizza> findAll(){
         return pizzaRepository.findAll();
     }
+
+    public Pizza findAll(Integer id){
+        return pizzaRepository.findById(id).get();
+    }
 }
