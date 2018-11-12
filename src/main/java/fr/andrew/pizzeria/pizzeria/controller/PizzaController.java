@@ -18,8 +18,8 @@ public class PizzaController {
     @GetMapping("/pizza")
     public String pizza(Model model) {
         List<Pizza> pizzas = pizzaBusiness.findAll();
+    model.addAttribute("pizzas", pizzas);
 
-        System.out.println(pizzas.get(0).getLibelle());
         return "pizza";
     }
 }

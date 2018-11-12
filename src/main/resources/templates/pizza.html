@@ -6,5 +6,16 @@
 </head>
 <body>
 Page de pizza
+
+
+    <table>
+        <tr th:each="pizza:${pizzas}">
+            <td th:text="${pizza.libelle}"></td>
+            <td th:text="${pizza.reference}"></td>
+            <td th:text="${pizza.prix}"></td>
+            <td th:text="${pizza.urlImage}"></td>
+        </tr>
+    </table>
+
 </body>
 </html>
