@@ -22,4 +22,16 @@ public class PizzaBusinessImpl implements IPizzaBusiness{
     public Pizza findOneById(Integer id){
         return pizzaRepository.findById(id).get();
     }
+
+    @Override
+    public Void deletePizza(Integer id) {
+        pizzaRepository.deleteById(id);
+        return null;
+    }
+
+    @Override
+    public Void addPizza(Pizza pizza) {
+        pizzaRepository.save(pizza);
+        return null;
+    }
 }

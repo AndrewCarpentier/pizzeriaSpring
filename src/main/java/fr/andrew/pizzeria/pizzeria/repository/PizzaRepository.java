@@ -3,6 +3,7 @@ package fr.andrew.pizzeria.pizzeria.repository;
 import fr.andrew.pizzeria.pizzeria.domain.Pizza;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;

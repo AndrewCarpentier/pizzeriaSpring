@@ -8,4 +8,6 @@ public interface IPizzaBusiness {
 
     List<Pizza> findAll();
     Pizza findOneById(Integer id);
+    Void deletePizza(Integer id);
+    Void addPizza(Pizza pizza);
 }
